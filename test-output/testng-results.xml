@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-08T16:13:59 IST" name="Suite" finished-at="2025-02-08T16:15:24 IST" duration-ms="84489">
+    <groups>
+    </groups>
+    <test started-at="2025-02-08T16:13:59 IST" name="Test" finished-at="2025-02-08T16:15:24 IST" duration-ms="84489">
+      <class name="testcases.PurchaseMobileTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.PurchaseMobileTest@2d3379b4]" started-at="2025-02-08T16:13:59 IST" name="setup" finished-at="2025-02-08T16:14:04 IST" duration-ms="4677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="purchaseMobileTest()[pri:0, instance:testcases.PurchaseMobileTest@2d3379b4]" started-at="2025-02-08T16:14:04 IST" name="purchaseMobileTest" finished-at="2025-02-08T16:14:25 IST" duration-ms="21628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseMobileTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.PurchaseMobileTest@2d3379b4]" started-at="2025-02-08T16:14:26 IST" name="tearDown" finished-at="2025-02-08T16:14:29 IST" duration-ms="3828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.PurchaseMobileTest -->
+      <class name="testcases.PurchaseMonitorTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.PurchaseMonitorTest@13c9d689]" started-at="2025-02-08T16:14:58 IST" name="setup" finished-at="2025-02-08T16:15:01 IST" duration-ms="3038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="purchaseMonitorTest()[pri:0, instance:testcases.PurchaseMonitorTest@13c9d689]" started-at="2025-02-08T16:15:01 IST" name="purchaseMonitorTest" finished-at="2025-02-08T16:15:20 IST" duration-ms="19704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseMonitorTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.PurchaseMonitorTest@13c9d689]" started-at="2025-02-08T16:15:20 IST" name="tearDown" finished-at="2025-02-08T16:15:24 IST" duration-ms="3354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.PurchaseMonitorTest -->
+      <class name="testcases.PurchaseLaptopTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.PurchaseLaptopTest@28701274]" started-at="2025-02-08T16:14:29 IST" name="setup" finished-at="2025-02-08T16:14:32 IST" duration-ms="2948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="purchaseLaptopTest()[pri:0, instance:testcases.PurchaseLaptopTest@28701274]" started-at="2025-02-08T16:14:32 IST" name="purchaseLaptopTest" finished-at="2025-02-08T16:14:54 IST" duration-ms="21947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseLaptopTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.PurchaseLaptopTest@28701274]" started-at="2025-02-08T16:14:54 IST" name="tearDown" finished-at="2025-02-08T16:14:58 IST" duration-ms="3325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.PurchaseLaptopTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
