@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class PurchaseMobileTest extends BaseClass {
 
-	@BeforeClass
+	@BeforeClass //This is before class prerequisites
 	@Parameters("browser")
     public void setup(String browser) throws IOException {
         openBrowser(browser); 
