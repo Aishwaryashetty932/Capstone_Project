@@ -13,7 +13,7 @@ import java.io.IOException;
 public class PurchaseLaptopTest extends BaseClass {
 
     @BeforeClass
-    @Parameters("browser")
+    @Parameters("browser")//parameter
     public void setup(String browser) throws IOException {
         openBrowser(browser);  
         driver.get(prop.getProperty("url"));  
