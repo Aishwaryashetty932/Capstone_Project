@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-12T09:45:06 IST" name="Suite" finished-at="2025-02-12T09:46:33 IST" duration-ms="86675">
+  <suite started-at="2025-02-18T14:05:00 IST" name="Suite" finished-at="2025-02-18T14:06:02 IST" duration-ms="61770">
     <groups>
     </groups>
-    <test started-at="2025-02-12T09:45:06 IST" name="Test" finished-at="2025-02-12T09:46:33 IST" duration-ms="86675">
+    <test started-at="2025-02-18T14:05:00 IST" name="Test" finished-at="2025-02-18T14:06:02 IST" duration-ms="61770">
       <class name="testcases.PurchaseMobileTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.PurchaseMobileTest@223d2c72]" started-at="2025-02-12T09:45:06 IST" name="setup" finished-at="2025-02-12T09:45:12 IST" duration-ms="5769" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.PurchaseMobileTest@223d2c72]" started-at="2025-02-18T14:05:00 IST" name="setup" finished-at="2025-02-18T14:05:03 IST" duration-ms="3512" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,17 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="purchaseMobileTest()[pri:0, instance:testcases.PurchaseMobileTest@223d2c72]" started-at="2025-02-12T09:45:12 IST" name="purchaseMobileTest" finished-at="2025-02-12T09:45:33 IST" duration-ms="21468" status="PASS">
+        <test-method signature="purchaseMobileTest()[pri:0, instance:testcases.PurchaseMobileTest@223d2c72]" started-at="2025-02-18T14:05:03 IST" name="purchaseMobileTest" finished-at="2025-02-18T14:05:18 IST" duration-ms="14221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseMobileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.PurchaseMobileTest@223d2c72]" started-at="2025-02-12T09:45:33 IST" name="tearDown" finished-at="2025-02-12T09:45:39 IST" duration-ms="5454" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.PurchaseMobileTest@223d2c72]" started-at="2025-02-18T14:05:18 IST" name="tearDown" finished-at="2025-02-18T14:05:22 IST" duration-ms="4339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.PurchaseMobileTest -->
       <class name="testcases.PurchaseMonitorTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.PurchaseMonitorTest@158d2680]" started-at="2025-02-12T09:46:06 IST" name="setup" finished-at="2025-02-12T09:46:09 IST" duration-ms="3122" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.PurchaseMonitorTest@158d2680]" started-at="2025-02-18T14:05:41 IST" name="setup" finished-at="2025-02-18T14:05:44 IST" duration-ms="2795" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,17 +39,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="purchaseMonitorTest()[pri:0, instance:testcases.PurchaseMonitorTest@158d2680]" started-at="2025-02-12T09:46:09 IST" name="purchaseMonitorTest" finished-at="2025-02-12T09:46:29 IST" duration-ms="20202" status="PASS">
+        <test-method signature="purchaseMonitorTest()[pri:0, instance:testcases.PurchaseMonitorTest@158d2680]" started-at="2025-02-18T14:05:44 IST" name="purchaseMonitorTest" finished-at="2025-02-18T14:05:58 IST" duration-ms="14069" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseMonitorTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.PurchaseMonitorTest@158d2680]" started-at="2025-02-12T09:46:29 IST" name="tearDown" finished-at="2025-02-12T09:46:33 IST" duration-ms="3527" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.PurchaseMonitorTest@158d2680]" started-at="2025-02-18T14:05:58 IST" name="tearDown" finished-at="2025-02-18T14:06:02 IST" duration-ms="3499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.PurchaseMonitorTest -->
       <class name="testcases.PurchaseLaptopTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.PurchaseLaptopTest@131774fe]" started-at="2025-02-12T09:45:39 IST" name="setup" finished-at="2025-02-12T09:45:42 IST" duration-ms="3029" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.PurchaseLaptopTest@131774fe]" started-at="2025-02-18T14:05:22 IST" name="setup" finished-at="2025-02-18T14:05:24 IST" duration-ms="2445" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="purchaseLaptopTest()[pri:0, instance:testcases.PurchaseLaptopTest@131774fe]" started-at="2025-02-12T09:45:42 IST" name="purchaseLaptopTest" finished-at="2025-02-12T09:46:02 IST" duration-ms="20549" status="PASS">
+        <test-method signature="purchaseLaptopTest()[pri:0, instance:testcases.PurchaseLaptopTest@131774fe]" started-at="2025-02-18T14:05:24 IST" name="purchaseLaptopTest" finished-at="2025-02-18T14:05:38 IST" duration-ms="13370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseLaptopTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.PurchaseLaptopTest@131774fe]" started-at="2025-02-12T09:46:02 IST" name="tearDown" finished-at="2025-02-12T09:46:06 IST" duration-ms="3509" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.PurchaseLaptopTest@131774fe]" started-at="2025-02-18T14:05:38 IST" name="tearDown" finished-at="2025-02-18T14:05:41 IST" duration-ms="3478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

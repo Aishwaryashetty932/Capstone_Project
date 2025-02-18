@@ -11,11 +11,11 @@ public class CheckoutPage {
 
     // Using different types of locators
     private By nameField = By.id("name");  
-    private By countryField = By.name("country");  
-    private By cityField = By.className("city-field");  
-    private By cardField = By.cssSelector("input[placeholder='Credit card']");  
+    private By countryField = By.id("country");  
+    private By cityField = By.id("city");  
+    private By cardField = By.id("card");  
     private By monthField = By.xpath("//input[@id='month']");  
-    private By yearField = By.tagName("input");  
+    private By yearField = By.id("year");  
     private By purchaseButton = By.xpath("//button[text()='Purchase']");  
     private By confirmationMessage = By.xpath("/html/body/div[10]/p");  
 
