@@ -1,4 +1,4 @@
-name: Run Selenium Tests Every 5 Hours
+name: Run Selenium Tests Every 5 Hours on Windows
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # Use Windows Runner
 
     steps:
       - name: Checkout Repository
@@ -20,20 +20,15 @@ jobs:
           java-version: '17'  # Change to your Java version
 
       - name: Install Google Chrome
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
+        run: choco install googlechrome -y  # Install Chrome using Chocolatey
 
       - name: Install ChromeDriver
+        run: choco install chromedriver -y  # Install matching ChromeDriver
+
+      - name: Verify Chrome and ChromeDriver Versions
         run: |
-          CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d'.' -f1)
-          echo "Chrome Version: $CHROME_VERSION"
-          sudo apt-get install -y unzip
-          wget -q "https://chromedriver.storage.googleapis.com/$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION)/chromedriver_linux64.zip"
-          unzip chromedriver_linux64.zip
-          sudo mv chromedriver /usr/local/bin/
-          sudo chmod +x /usr/local/bin/chromedriver
-          chromedriver --version  # Check installed version
+          google-chrome --version
+          chromedriver --version
 
       - name: Install Maven Dependencies
         run: mvn clean install
