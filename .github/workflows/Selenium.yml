@@ -1,37 +1,29 @@
-name: Run Selenium Tests Every 5 Hours on Windows
+name: Selenium Tests
 
 on:
   schedule:
     - cron: "0 */5 * * *"  # Runs every 5 hours
-  workflow_dispatch:  # Allows manual trigger
+  workflow_dispatch: # Allows manual trigger from GitHub Actions
 
 jobs:
   test:
-    runs-on: windows-latest  # Use Windows Runner
-
+    runs-on: windows-latest  # Runs on Windows
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4  # Fetch latest code
-
-      - name: Set Up Java
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Fetch the latest code
+      
+      - name: Setup Java & Maven
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '17'  # Change to your Java version
+          distribution: 'temurin'  # Use Temurin JDK
+          java-version: '17'  # Change version if needed
 
-      - name: Install Google Chrome
-        run: choco install googlechrome -y  # Install Chrome using Chocolatey
-
-      - name: Install ChromeDriver
-        run: choco install chromedriver -y  # Install matching ChromeDriver
-
-      - name: Verify Chrome and ChromeDriver Versions
-        run: |
-          google-chrome --version
-          chromedriver --version
-
-      - name: Install Maven Dependencies
-        run: mvn clean install
+      - name: Setup Chrome & ChromeDriver
+        uses: browser-actions/setup-chrome@latest  # Installs Chrome
+      - name: Setup ChromeDriver
+        uses: nanasess/setup-chromedriver@v2  # Installs ChromeDriver
+        with:
+          chromedriver-version: latest
 
       - name: Run Selenium Tests
-        run: mvn test
+        run: mvn clean test  # Runs your tests with Maven
