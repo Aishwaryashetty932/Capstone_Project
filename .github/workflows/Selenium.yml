@@ -3,11 +3,12 @@ name: Run Selenium Tests Every 5 Hours
 on:
   schedule:
     - cron: "0 */5 * * *"  # Runs every 5 hours
-  workflow_dispatch:  # Allows manual trigger from GitHub
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
   test:
-    runs-on: ubuntu-latest  # Uses a Linux runner
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4  # Fetch latest code
@@ -18,10 +19,21 @@ jobs:
           distribution: 'temurin'
           java-version: '17'  # Change to your Java version
 
-      - name: Set Up Chrome Driver
-        uses: nanasess/setup-chromedriver@v2
-        with:
-          chromedriver-version: 'latest'
+      - name: Install Google Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Install ChromeDriver
+        run: |
+          CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d'.' -f1)
+          echo "Chrome Version: $CHROME_VERSION"
+          sudo apt-get install -y unzip
+          wget -q "https://chromedriver.storage.googleapis.com/$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION)/chromedriver_linux64.zip"
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/
+          sudo chmod +x /usr/local/bin/chromedriver
+          chromedriver --version  # Check installed version
 
       - name: Install Maven Dependencies
         run: mvn clean install
