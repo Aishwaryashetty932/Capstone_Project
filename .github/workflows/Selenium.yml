@@ -1,0 +1,40 @@
+name: Run Selenium Every 5 Hours
+
+on:
+  schedule:
+    - cron: '0 */5 * * *'  # Runs every 5 hours
+  workflow_dispatch:  # Allows manual execution
+
+jobs:
+  run-selenium:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set Up Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '17' # Change if using another version
+
+    - name: Install Chrome & ChromeDriver
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+        CHROME_VERSION=$(google-chrome --version | awk '{print $3}')
+        CHROMEDRIVER_VERSION=$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION)
+        wget -q "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
+        unzip chromedriver_linux64.zip
+        sudo mv chromedriver /usr/local/bin/
+        chromedriver --version
+
+    - name: Set Up Selenium Dependencies
+      run: |
+        pip install selenium
+
+    - name: Run Selenium Tests
+      run: |
+        mvn test  # If using Maven
+        # python script.py  # If using Python
